@@ -35,12 +35,12 @@ stages:
     steps:
     - task: SnykSecurityScan@1
       inputs:
-        serviceConnectionEndpoint: 'Snyk-Auth'
+        serviceConnectionEndpoint: 'KGFADOAdmin-Snyk'
         testType: 'app'
         severityThreshold: 'medium'
         monitorWhen: 'always'
         failOnIssues: true
-        projectName: 'frontend-nextjs-log'
+        projectName: 'frontend-nextjs-logs'
         organization: 'KGFADOAdmin'
 
   - job: Test
